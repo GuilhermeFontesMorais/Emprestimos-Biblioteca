@@ -5,9 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empréstimos Biblioteca</title>
     <link rel="stylesheet" href="output.css">
-    <script type="module" src="script.js"></script>
+    <script type="module" src="script.js" defer></script>
 </head>
-<body class="bg-red-800">
+<body>
+    <header>
+        <h1>\Biblioteca em Números</h1>
+        <p>Controle de emprestimos de biblioteca</p>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#registros">Registros</a>
+            <a href="#resultados">Resultados</a>
+            <a href="cuidado">Cuidados com os livros</a>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bem-Vindo a Biblioteca em Números</h2>
+            <p>Esta página apresenta um resumo dos empréstimos realizados
+                na biblioteca, permitindo acompanhar o movimento e conhecer
+                melhor o uso do acervo.
+            </p>
+            <p>
+                <strong>Período analisado:</strong>
+                Setembro de 2026.
+            </p>
+
+            <p>
+                Os dados estão organizados por categoria de livros e serão utilizados
+                para calcular indicadores de emprestimos da biblioteca
+            </p>
+        </section>
+
+        <section id="registros">
+            <h2>Registros dos empréstimos</h2>
+            <p>
+                A tabela apresenta a quantidade de empréstimos por categoria durante 
+                setembro de 2026.
+                Os valores são exemplos fictícios para esta atividade.
+            </p>
+
+            <table>
+                <caption>
+                    Empréstimos por categoria no periodo analisado
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Quantidade de empréstimos</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Literaturas</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>Ciencias</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Historia</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Tecnologia</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Infantil</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Outros</td>
+                        <td>22</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="resultados">
+            <h2>Resultados dos empréstimos</h2>
+
+            <p>
+                Os indicadores abaixo são calculados com base nos seis registros 
+                apresentados ns tabela.
+            </p>
+
+            <article>
+                <h3> Total de empréstimos</h3>
+                <p id="total-emprestimos">Calculando...</p>
+            </article>
+
+            <article>
+                <h3>Média por categoria </h3>
+                <p id="media-emprestimos">Calculando...</p>
+            </article>
+
+            <article>
+                <h3>Registros acima da referência</h3>
+                <p id="registros-acima">Calculando...</p>
+            </article>
+
+            <article>
+                <h3>Classificação do movimento</h3>
+            </article>
+        </section>
+
+        <section id="servicos">
+            <h2>Serviços da biblioteca</h2>
+            <p>
+                A biblioteca oferece recursos para incentivar a leitura a apoiar os estudos
+            </p>
+
+            <ul>
+                <li>Empréstimo de livros do acervo.</li>
+                <li>Consulta de obras disponíveis.</li>
+                <li>Orientação para encontrar livros por categoria.</li>
+            </ul>
+        </section>
+
+        <section id="cuidados">
+            <h2>Cuidados com os livros</h2>
+
+            <p>
+                Conservar os livros ajuda a manter o acervo disponivel para todos os leitores 
+            </p>
+
+            <ul>
+                <li>Não rasurar ou arrancar páginas</li>
+                <li>Manter alimentos e líquidos linge dos livros</li>
+                <li>Guardar os livros em locais limpos e secos</li>
+                <li>Devolver os livros dentro do prazo estabelecido</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto: Biblioteca em números</p>
+        <p>Integrantes: Lucas Andriel</p>
+        <p>Turma: TSI</p>
+    </footer>
     
 </body>
 </html>
