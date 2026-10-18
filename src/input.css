@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.192);
+}
+
+header > nav > a:hover{
+    color: white;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 217, 255);
+    text-underline-offset: 8px;
+}
