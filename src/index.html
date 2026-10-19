@@ -9,8 +9,8 @@
     <script type="module" src="script.js" defer></script>
 </head>
 
-<body class="m-0 p-0 box-border">
-    <header class="bg-blue-500 flex flex-row p-3 gap-2 text-gray-100">
+<body class="flex flex-col min-h-screen m-0 p-0 box-border">
+    <header class="bg-blue-950 flex flex-row p-3 gap-2 text-gray-100">
         <!--Icone de livro-->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-12 self-center">
             <path
@@ -18,7 +18,7 @@
         </svg>
         <div>
             <h1 class="font-bold text-xl">Biblioteca em Números</h1>
-            <p class="text-sm">Controle de emprestimos de biblioteca</p>
+            <p class="text-xs">Controle de emprestimos de biblioteca</p>
         </div>
 
         <nav class="flex text-lg self-center ml-auto gap-5">
@@ -28,19 +28,19 @@
             <a href="cuidado">Cuidados</a>
         </nav>
     </header>
-    <main>
-        <section id="inicio">
-            <h2>Bem-Vindo a Biblioteca em Números</h2>
-            <p>Esta página apresenta um resumo dos empréstimos realizados
+    <main class="grow w-full">
+        <section class="grid grid-cols-2 m-4 p-4 bg-blue-50 w-3/4 mx-auto" id="inicio">
+            <h2 class="order-1 text-blue-950 font-bold text-xl">Bem-Vindo a Biblioteca em Números</h2>
+            <p class="order-3">Esta página apresenta um resumo dos empréstimos realizados
                 na biblioteca, permitindo acompanhar o movimento e conhecer
                 melhor o uso do acervo.
             </p>
-            <p>
+            <p class="order-2 text-blue-950">
                 <strong>Período analisado:</strong>
                 Setembro de 2026.
             </p>
 
-            <p>
+            <p class="order-4">
                 Os dados estão organizados por categoria de livros e serão utilizados
                 para calcular indicadores de emprestimos da biblioteca
             </p>
