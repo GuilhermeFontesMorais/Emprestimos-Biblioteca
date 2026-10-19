@@ -28,8 +28,8 @@
             <a href="cuidado">Cuidados</a>
         </nav>
     </header>
-    <main class="grow w-full">
-        <section class="grid grid-cols-2 m-4 p-4 bg-blue-50 w-3/4 mx-auto" id="inicio">
+    <main class="flex flex-wrap justify-center grow w-full">
+        <section class="grid grid-cols-2 m-4 p-4 bg-blue-50 w-3/4" id="inicio">
             <h2 class="order-1 text-blue-950 font-bold text-xl">Bem-Vindo a Biblioteca em Números</h2>
             <p class="order-3">Esta página apresenta um resumo dos empréstimos realizados
                 na biblioteca, permitindo acompanhar o movimento e conhecer
@@ -46,48 +46,48 @@
             </p>
         </section>
 
-        <section id="registros">
-            <h2>Registros dos empréstimos</h2>
+        <section class="m-4" id="registros">
+            <h2 class= "mb-1 text-xl text-blue-950 font-bold">Registros dos empréstimos</h2>
             <p>
                 A tabela apresenta a quantidade de empréstimos por categoria durante
                 setembro de 2026.
                 Os valores são exemplos fictícios para esta atividade.
             </p>
 
-            <table>
-                <caption>
+            <table class="w-3/4 text-left justify-self-center mt-3 border border-blue-100">
+                <caption class="py-1 px-4 bg-blue-950 text-white">
                     Empréstimos por categoria no periodo analisado
                 </caption>
 
-                <thead>
+                <thead class="bg-blue-50">
                     <tr>
-                        <th scope="col">Categoria</th>
+                        <th class="py-1 px-4" scope="col">Categoria</th>
                         <th scope="col">Quantidade de empréstimos</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    <tr>
+                    <tr class="border border-blue-100">
                         <td>Literaturas</td>
                         <td>35</td>
                     </tr>
-                    <tr>
+                    <tr class="border border-blue-100">
                         <td>Ciencias</td>
                         <td>20</td>
                     </tr>
-                    <tr>
+                    <tr class="border border-blue-100">
                         <td>Historia</td>
                         <td>30</td>
                     </tr>
-                    <tr>
+                    <tr class="border border-blue-100">
                         <td>Tecnologia</td>
                         <td>15</td>
                     </tr>
-                    <tr>
+                    <tr class="border border-blue-100">
                         <td>Infantil</td>
                         <td>28</td>
                     </tr>
-                    <tr>
+                    <tr class="border border-blue-100">
                         <td>Outros</td>
                         <td>22</td>
                     </tr>
