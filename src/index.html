@@ -46,8 +46,44 @@
             </p>
         </section>
 
+        <!-- Nova seção para Adicionar Empréstimos -->
+        <section class="m-4 p-6 bg-blue-50 w-3/4 shadow justify-self-center border border-blue-100"
+            id="adicionar-registros">
+            <h2 class="mb-4 text-xl text-blue-950 font-bold">Adicionar Novos Empréstimos</h2>
+
+            <form id="form-adicionar" class="flex flex-col sm:flex-row gap-4 items-end">
+                <div class="flex flex-col flex-grow w-full">
+                    <label for="categoria-select" class="text-blue-950 font-semibold mb-1">Categoria:</label>
+                    <select id="categoria-select"
+                        class="p-2 border border-blue-200 rounded focus:outline-none focus:ring-2 focus:ring-blue-950"
+                        required>
+                        <option value="" disabled selected>Selecione a categoria...</option>
+                        <option value="0">Literaturas</option>
+                        <option value="1">Ciencias</option>
+                        <option value="2">Historia</option>
+                        <option value="3">Tecnologia</option>
+                        <option value="4">Infantil</option>
+                        <option value="5">Outros</option>
+                    </select>
+                </div>
+
+                <div class="flex flex-col flex-grow w-full">
+                    <label for="quantidade-input" class="text-blue-950 font-semibold mb-1">Quantidade a
+                        adicionar:</label>
+                    <input type="number" id="quantidade-input" min="1"
+                        class="p-2 border border-blue-200 rounded focus:outline-none focus:ring-2 focus:ring-blue-950"
+                        placeholder="Ex: 5" required>
+                </div>
+
+                <button type="submit"
+                    class="bg-blue-950 text-white font-bold py-2 px-6 rounded hover:bg-blue-800 transition-colors w-full sm:w-auto">
+                    Adicionar
+                </button>
+            </form>
+        </section>
+
         <section class="m-4" id="registros">
-            <h2 class= "mb-1 text-xl text-blue-950 font-bold">Registros dos empréstimos</h2>
+            <h2 class="mb-1 text-xl text-blue-950 font-bold">Registros dos empréstimos</h2>
             <p>
                 A tabela apresenta a quantidade de empréstimos por categoria durante
                 setembro de 2026.
@@ -118,7 +154,7 @@
                 </article>
                 <article class="bg-green-50 rounded-md p-8 shadow">
                     <h3 class=" text-blue-950 font-bold text-md">Classificação do movimento</h3>
-                    <p class="text-blue-950 font-bold text-lg" id="registros-acima">Calculando...</p>
+                    <p class="text-blue-950 font-bold text-lg" id="classificacao-movimento">Calculando...</p>
                 </article>
             </div>
         </section>
@@ -135,7 +171,7 @@
                 <li>Orientação para encontrar livros por categoria.</li>
             </ul>
 
-             <h2 class="text-blue-950 font-bold text-xl order-2">Cuidados com os livros</h2>
+            <h2 class="text-blue-950 font-bold text-xl order-2">Cuidados com os livros</h2>
 
             <p class="order-4">
                 Conservar os livros ajuda a manter o acervo disponivel para todos os leitores
