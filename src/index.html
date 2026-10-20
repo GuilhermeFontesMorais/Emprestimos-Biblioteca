@@ -10,7 +10,7 @@
 </head>
 
 <body class="flex flex-col min-h-screen m-0 p-0 box-border">
-    <header class="bg-blue-950 flex flex-row p-3 gap-2 text-gray-100">
+    <header class="bg-blue-950 flex flex-row p-3 gap-2 text-gray-100 shadow-md">
         <!--Icone de livro-->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-12 self-center">
             <path
@@ -25,11 +25,11 @@
             <a href="#inicio">Início</a>
             <a href="#registros">Registros</a>
             <a href="#resultados">Resultados</a>
-            <a href="cuidado">Cuidados</a>
+            <a href="#servicos_e_cuidados">Cuidados</a>
         </nav>
     </header>
     <main class="flex flex-wrap justify-center grow w-full">
-        <section class="grid grid-cols-2 m-4 p-4 bg-blue-50 w-3/4" id="inicio">
+        <section class="grid grid-cols-2 m-4 p-4 bg-blue-50 w-3/4 shadow" id="inicio">
             <h2 class="order-1 text-blue-950 font-bold text-xl">Bem-Vindo a Biblioteca em Números</h2>
             <p class="order-3">Esta página apresenta um resumo dos empréstimos realizados
                 na biblioteca, permitindo acompanhar o movimento e conhecer
@@ -95,55 +95,53 @@
             </table>
         </section>
 
-        <section id="resultados">
-            <h2>Resultados dos empréstimos</h2>
+        <section class="" id="resultados">
+            <h2 class=" text-blue-950 font-bold text-xl">Resultados dos empréstimos</h2>
 
             <p>
                 Os indicadores abaixo são calculados com base nos seis registros
                 apresentados ns tabela.
             </p>
 
-            <article>
-                <h3> Total de empréstimos</h3>
-                <p id="total-emprestimos">Calculando...</p>
-            </article>
-
-            <article>
-                <h3>Média por categoria </h3>
-                <p id="media-emprestimos">Calculando...</p>
-            </article>
-
-            <article>
-                <h3>Registros acima da referência</h3>
-                <p id="registros-acima">Calculando...</p>
-            </article>
-
-            <article>
-                <h3>Classificação do movimento</h3>
-            </article>
+            <div class="flex flex-wrap my-6">
+                <article class="bg-blue-50 rounded-md p-8 shadow mr-6">
+                    <h3 class=" text-blue-950 font-bold text-md"> Total de empréstimos</h3>
+                    <p class="text-blue-950 font-bold text-lg" id="total-emprestimos">Calculando...</p>
+                </article>
+                <article class="bg-green-50 rounded-md p-8 shadow mr-6">
+                    <h3 class=" text-blue-950 font-bold text-md">Média por categoria </h3>
+                    <p class="text-blue-950 font-bold text-lg" id="media-emprestimos">Calculando...</p>
+                </article>
+                <article class="bg-blue-50 rounded-md p-8 shadow mr-6">
+                    <h3 class=" text-blue-950 font-bold text-md">Registros acima da referência</h3>
+                    <p class="text-blue-950 font-bold text-lg" id="registros-acima">Calculando...</p>
+                </article>
+                <article class="bg-green-50 rounded-md p-8 shadow">
+                    <h3 class=" text-blue-950 font-bold text-md">Classificação do movimento</h3>
+                    <p class="text-blue-950 font-bold text-lg" id="registros-acima">Calculando...</p>
+                </article>
+            </div>
         </section>
 
-        <section id="servicos">
-            <h2>Serviços da biblioteca</h2>
-            <p>
+        <section class="grid grid-cols-2 gap-2 m-4 p-4 bg-blue-50 w-3/4 shadow-md" id="servicos_e_cuidados">
+            <h2 class="order-1 text-blue-950 font-bold text-xl">Serviços da biblioteca</h2>
+            <p class="order-3">
                 A biblioteca oferece recursos para incentivar a leitura a apoiar os estudos
             </p>
 
-            <ul>
+            <ul class="order-5 list-disc pl-4 self-end">
                 <li>Empréstimo de livros do acervo.</li>
                 <li>Consulta de obras disponíveis.</li>
                 <li>Orientação para encontrar livros por categoria.</li>
             </ul>
-        </section>
 
-        <section id="cuidados">
-            <h2>Cuidados com os livros</h2>
+             <h2 class="text-blue-950 font-bold text-xl order-2">Cuidados com os livros</h2>
 
-            <p>
+            <p class="order-4">
                 Conservar os livros ajuda a manter o acervo disponivel para todos os leitores
             </p>
 
-            <ul>
+            <ul class="order-6 list-disc pl-4 self-end">
                 <li>Não rasurar ou arrancar páginas</li>
                 <li>Manter alimentos e líquidos linge dos livros</li>
                 <li>Guardar os livros em locais limpos e secos</li>

@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-header{
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.192);
+body{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.05);
 }
 
 header > nav > a:hover{
