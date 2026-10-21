@@ -49,7 +49,9 @@
         <!-- Nova seção para Adicionar Empréstimos -->
         <section class="m-4 p-6 bg-blue-50 w-3/4 shadow justify-self-center border border-blue-100"
             id="adicionar-registros">
-            <h2 class="mb-4 text-xl text-blue-950 font-bold">Adicionar Novos Empréstimos</h2>
+            <h2 class="mb-4 text-xl text-blue-950 font-bold">Gerenciar empréstimos e devoluções</h2>
+
+            <div id="mensagem-alerta" class="hidden mb-4 p-3 rounded font-semibold text-center text-sm"></div>
 
             <form id="form-adicionar" class="flex flex-col sm:flex-row gap-4 items-end">
                 <div class="flex flex-col flex-grow w-full">
@@ -66,10 +68,17 @@
                         <option value="5">Outros</option>
                     </select>
                 </div>
+<!--adicionar devolução-->
+                <div class="flex flex-col flex-grow w-full">
+                    <label for="acao-select" class="text-blue-950 font-semibold mb-1">Ação:</label>
+                    <select id="acao-select" class="p-2 border-blue-200 rounded focus:outline-none focus:ring-blue-950" required>
+                        <option value="emprestar">Realizar Empréstimo</option>
+                        <option value="devolver">Realizar Devolução</option>
+                    </select>
+                </div>
 
                 <div class="flex flex-col flex-grow w-full">
-                    <label for="quantidade-input" class="text-blue-950 font-semibold mb-1">Quantidade a
-                        adicionar:</label>
+                    <label for="quantidade-input" class="text-blue-950 font-semibold mb-1">Quantidade:</label>
                     <input type="number" id="quantidade-input" min="1"
                         class="p-2 border border-blue-200 rounded focus:outline-none focus:ring-2 focus:ring-blue-950"
                         placeholder="Ex: 5" required>
@@ -77,7 +86,7 @@
 
                 <button type="submit"
                     class="bg-blue-950 text-white font-bold py-2 px-6 rounded hover:bg-blue-800 transition-colors w-full sm:w-auto">
-                    Adicionar
+                    Confirmar
                 </button>
             </form>
         </section>
@@ -92,41 +101,26 @@
 
             <table class="w-3/4 text-left justify-self-center mt-3 border border-blue-100">
                 <caption class="py-1 px-4 bg-blue-950 text-white">
-                    Empréstimos por categoria no periodo analisado
+                    Situação do acervo por categoria
                 </caption>
-
+<!--alteração na tabela-->
                 <thead class="bg-blue-50">
                     <tr>
                         <th class="py-1 px-4" scope="col">Categoria</th>
-                        <th scope="col">Quantidade de empréstimos</th>
+                        <th scope="col">Total no Acervo</th>
+                        <th scope="col">Emprestados</th>
+                        <th scope="col">Disponiveis</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    <tr class="border border-blue-100">
-                        <td>Literaturas</td>
-                        <td>35</td>
-                    </tr>
-                    <tr class="border border-blue-100">
-                        <td>Ciencias</td>
-                        <td>20</td>
-                    </tr>
-                    <tr class="border border-blue-100">
-                        <td>Historia</td>
-                        <td>30</td>
-                    </tr>
-                    <tr class="border border-blue-100">
-                        <td>Tecnologia</td>
-                        <td>15</td>
-                    </tr>
-                    <tr class="border border-blue-100">
-                        <td>Infantil</td>
-                        <td>28</td>
-                    </tr>
-                    <tr class="border border-blue-100">
-                        <td>Outros</td>
-                        <td>22</td>
-                    </tr>
+            <!-- Linhas mantidas no HTML para manter a estrutura inicial -->
+                    <tr class="border border-blue-100"><td class="py-1 px-4">Literaturas</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr class="border border-blue-100"><td class="py-1 px-4">Ciências</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr class="border border-blue-100"><td class="py-1 px-4">História</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr class="border border-blue-100"><td class="py-1 px-4">Tecnologia</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr class="border border-blue-100"><td class="py-1 px-4">Infantil</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr class="border border-blue-100"><td class="py-1 px-4">Outros</td><td>0</td><td>0</td><td>0</td></tr>
                 </tbody>
             </table>
         </section>
