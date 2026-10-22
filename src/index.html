@@ -10,7 +10,7 @@
 </head>
 
 <body class="flex flex-col min-h-screen m-0 p-0 box-border">
-    <header class="bg-blue-950 flex flex-row p-3 gap-2 text-gray-100 shadow-md">
+    <header class="bg-blue-950 flex flex-col sm:flex-row p-3 gap-3 sm:gap-2 text-gray-100 shadow-md">
         <!--Icone de livro-->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-12 self-center">
             <path
@@ -29,7 +29,7 @@
         </nav>
     </header>
     <main class="flex flex-wrap justify-center grow w-full">
-        <section class="grid grid-cols-2 m-4 p-4 bg-blue-50 w-3/4 shadow" id="inicio">
+        <section class="grid grid-cols-2 m-4 p-4 bg-blue-50 w-3/4 shadow sm:grid-cols-1 sm:w-full" id="inicio">
             <h2 class="order-1 text-blue-950 font-bold text-xl">Bem-Vindo a Biblioteca em Números</h2>
             <p class="order-3">Esta página apresenta um resumo dos empréstimos realizados
                 na biblioteca, permitindo acompanhar o movimento e conhecer
@@ -37,7 +37,7 @@
             </p>
             <p class="order-2 text-blue-950">
                 <strong>Período analisado:</strong>
-                Setembro de 2026.
+                Outubro de 2026.
             </p>
 
             <p class="order-4">
@@ -133,7 +133,7 @@
                 apresentados ns tabela.
             </p>
 
-            <div class="flex flex-wrap my-6">
+            <div class="flex flex-wrap my-6 gap-4 justify-center">
                 <article class="bg-blue-50 rounded-md p-8 shadow mr-6">
                     <h3 class=" text-blue-950 font-bold text-md"> Total de empréstimos</h3>
                     <p class="text-blue-950 font-bold text-lg" id="total-emprestimos">Calculando...</p>

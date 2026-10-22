@@ -8,7 +8,7 @@ const categoriasAcervo = [
     { nome: "Infantil", totalExemplares: 35, emprestados: 28 },
     { nome: "Outros", totalExemplares: 30, emprestados: 22 }
 ];
-const mesAnalise = "Setembro de 2026";
+const mesAnalise = "Outubro de 2026";
 const valorReferencia = 25; //Meta de corte para saber se uma categoria teve "alto movimento"
 
 // 2. Funções de Cálculo
